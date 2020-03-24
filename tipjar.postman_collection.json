@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "abab5f86-3bcb-49b0-885e-967078054a60",
+		"name": "tipjar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "profiles",
+			"item": [
+				{
+					"name": "Get Profile by Vanity Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/profiles?vanity_name=johndoe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"profiles"
+							],
+							"query": [
+								{
+									"key": "vanity_name",
+									"value": "johndoe"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile by Firebase Uid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/profiles?firebase_uid=Fu7g3yIvLIdVDbBdtFcr41QM7Id2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"profiles"
+							],
+							"query": [
+								{
+									"key": "firebase_uid",
+									"value": "Fu7g3yIvLIdVDbBdtFcr41QM7Id2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Profile by Profile Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/profiles/Fu7g3yIvLIdVDbBdtFcr41QM7Id2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"profiles",
+								"Fu7g3yIvLIdVDbBdtFcr41QM7Id2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"about\": \"After years of creating entertainment together, we were reborn in 2016 as Easy Allies. Thanks to the overwhelming generosity of our patrons, we’ve been able to continue creating the kinds of videos we love to make with more freedom than ever before. We produce a wide range of content. There are lengthy podcasts, succinct reviews, and livestreams that go for hours on end. Most of what we produce is focused on video games, although at times other passions like movies and anime rise to the surface as well.Individually, we are Brandon Jones, Daniel Bloodworth, Kyle Bosman, Mike Huber, Ian Hinck, Ben Moore, Brad Ellis, Don Casanova, and Michael Damiani. As the name Easy Allies implies, we want to work with others and interact with our community. Your support goes directly into making our stuff bigger and better, along with giving you early access, exclusive shows, and other benefits. You might get a question answered, a comment highlighted, or a starring role in one of our ongoing series.The size and reach of Easy Allies is completely up to you. Patreon is the primary engine that keeps all this running, so if you enjoy our shows and want to see us make more, this is the place to support us. Check out our work so far to get a good idea of what we’re capable of. Thank you for stopping by, and we hope you’ll consider contributing to Easy Allies.\",\n    \"banner_image_url\": \"https://images.unsplash.com/photo-1495132336320-a0923a300d34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80\",\n    \"external_links\": [\n        {\n            \"medium\": \"facebook\",\n            \"url\": \"https://facebook.com\"\n        },\n        {\n            \"medium\": \"twitter\",\n            \"url\": \"https://twitter.com\"\n        }\n    ],\n    \"featured_video_url\": \"https://www.youtube.com/watch?v=mM5_T-F1Yn4\",\n    \"name\": \"John Doe\",\n    \"firebase_uid\": \"1mHCi3vPSaNpOsNa5bRE7obHBes2\",\n    \"profile_image_url\": \"https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2135&q=80\",\n    \"short\": \"Filmmaker\",\n    \"vanity_name\": \"johndoe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/profiles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"about\": \"After years of creating entertainment together, we were reborn in 2016 as Easy Allies. Thanks to the overwhelming generosity of our patrons, we’ve been able to continue creating the kinds of videos we love to make with more freedom than ever before. We produce a wide range of content. There are lengthy podcasts, succinct reviews, and livestreams that go for hours on end. Most of what we produce is focused on video games, although at times other passions like movies and anime rise to the surface as well.Individually, we are Brandon Jones, Daniel Bloodworth, Kyle Bosman, Mike Huber, Ian Hinck, Ben Moore, Brad Ellis, Don Casanova, and Michael Damiani. As the name Easy Allies implies, we want to work with others and interact with our community. Your support goes directly into making our stuff bigger and better, along with giving you early access, exclusive shows, and other benefits. You might get a question answered, a comment highlighted, or a starring role in one of our ongoing series.The size and reach of Easy Allies is completely up to you. Patreon is the primary engine that keeps all this running, so if you enjoy our shows and want to see us make more, this is the place to support us. Check out our work so far to get a good idea of what we’re capable of. Thank you for stopping by, and we hope you’ll consider contributing to Easy Allies.\",\n    \"banner_image_url\": \"https://images.unsplash.com/photo-1495132336320-a0923a300d34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80\",\n    \"external_links\": [\n        {\n            \"medium\": \"facebook\",\n            \"url\": \"https://facebook.com\"\n        },\n        {\n            \"medium\": \"twitter\",\n            \"url\": \"https://twitter.com\"\n        }\n    ],\n    \"featured_video_url\": \"https://www.youtube.com/watch?v=mM5_T-F1Yn4\",\n    \"name\": \"John Doe\",\n    \"firebase_uid\": \"1mHCi3vPSaNpOsNa5bRE7obHBes2\",\n    \"profile_image_url\": \"https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2135&q=80\",\n    \"short\": \"Filmmaker\",\n    \"vanity_name\": \"johndoe\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/profiles/vMIEYe6mlHnBCegaygWM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"profiles",
+								"vMIEYe6mlHnBCegaygWM"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Validity of Vanity Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/profiles/validate_vanity_name/johndoe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"profiles",
+								"validate_vanity_name",
+								"johndoe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Profile Stats",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/profiles/vMIEYe6mlHnBCegaygWM/refresh_stats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"profiles",
+								"vMIEYe6mlHnBCegaygWM",
+								"refresh_stats"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "memberships",
+			"item": [
+				{
+					"name": "Get Membership by Membership Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/memberships/H8nmlNb2XWcsHSIMcWcV",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"memberships",
+								"H8nmlNb2XWcsHSIMcWcV"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Memberships for Creator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/memberships?creator=Fu7g3yIvLIdVDbBdtFcr41QM7Id2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"memberships"
+							],
+							"query": [
+								{
+									"key": "creator",
+									"value": "Fu7g3yIvLIdVDbBdtFcr41QM7Id2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Memberships",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"memberships\": [\n        {\n            \"amount_paise\": 5000,\n            \"description\": \"Access to private WhatsApp group\",\n            \"payment_cycle\": \"MONTHLY\"\n        },\n        {\n            \"amount_paise\": 10000,\n            \"description\": \"Exclusive podcasts and video footage with usage rights\",\n            \"payment_cycle\": \"MONTHLY\"\n        },\n        {\n            \"amount_paise\": 50000,\n            \"description\": \"Personal online conversations, video chats and in-person meets\",\n            \"payment_cycle\": \"MONTHLY\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/memberships?creator=Fu7g3yIvLIdVDbBdtFcr41QM7Id2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"memberships"
+							],
+							"query": [
+								{
+									"key": "creator",
+									"value": "Fu7g3yIvLIdVDbBdtFcr41QM7Id2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "pledges",
+			"item": [
+				{
+					"name": "Get Pledge",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patreon-a7285/us-central1/pledges/A4N8hXN1EsLpY3tMYJns",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patreon-a7285",
+								"us-central1",
+								"pledges",
+								"A4N8hXN1EsLpY3tMYJns"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
