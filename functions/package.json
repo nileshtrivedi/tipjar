@@ -22,7 +22,7 @@
     "firebase-functions": "^3.3.0",
     "lodash": "^4.17.15",
     "module-alias": "^2.2.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-fetch": "^2.6.0",
     "polished": "^3.4.4",
     "promise-retry": "^1.1.1"
